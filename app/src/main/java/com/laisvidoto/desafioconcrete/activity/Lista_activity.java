@@ -1,13 +1,15 @@
-package com.laisvidoto.desafioconcrete;
+package com.laisvidoto.desafioconcrete.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Home extends AppCompatActivity {
+import com.laisvidoto.desafioconcrete.R;
+
+public class Lista_activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_lista);
     }
 }

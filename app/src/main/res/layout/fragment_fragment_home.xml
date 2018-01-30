@@ -8,7 +8,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:paddingBottom="20dp"
-    tools:context="com.laisvidoto.desafioconcrete.FragmentHome">
+    tools:context="com.laisvidoto.desafioconcrete.activity.FragmentHome_activity">
 
     <!-- Nome do repositorio, descrição, fork e star -->
     <LinearLayout

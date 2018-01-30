@@ -8,7 +8,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:paddingBottom="20dp"
-    tools:context="com.laisvidoto.desafioconcrete.FragmentLista">
+    tools:context="com.laisvidoto.desafioconcrete.activity.FragmentLista_activity">
 
     <!-- Titulo do Pull Request -->
     <TextView
