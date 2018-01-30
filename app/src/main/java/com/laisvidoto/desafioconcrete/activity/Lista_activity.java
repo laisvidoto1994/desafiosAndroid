@@ -60,6 +60,7 @@ public class Lista_activity extends AppCompatActivity
 
         progressBar     = (ProgressBar) findViewById(R.id.pullProgressBar);
         gitService   = Api.getGitService();
+
         listPullRequest = (RecyclerView) findViewById(R.id.pullList);
         adapter = new PullAdapter(this, new ArrayList<PullRequest>(0), new PullAdapter.PullRequestListener()
         {
