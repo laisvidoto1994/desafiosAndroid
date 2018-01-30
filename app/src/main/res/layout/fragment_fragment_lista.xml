@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:paddingBottom="20dp"
+    tools:context="com.laisvidoto.desafioconcrete.FragmentLista">
+
+    <!-- Titulo do Pull Request -->
+    <TextView
+        android:id="@+id/txtPullTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/titulo"
+    />
+
+    <!-- Descrição do pull request -->
+    <TextView
+        android:id="@+id/txtPullBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:textSize="16sp"
+        android:textColor="@color/body"
+    />
+
+    <!-- Imagem do usuario que fez o pull request,Username, nome -->
+    <LinearLayout
+        android:id="@+id/containerAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        tools:ignore="UseCompoundDrawables">
+
+        <!-- Imagem do usuario que fez o pull request -->
+        <ImageView
+            android:id="@+id/pullImagemAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="ContentDescription"
+        />
+
+        <!-- Username e nome -->
+        <LinearLayout
+            android:id="@+id/containerAuthores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <!-- Username -->
+            <TextView
+                android:id="@+id/txtPullNomeAutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/titulo"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+            />
+
+            <!-- nome do usuario -->
+            <TextView
+                android:id="@+id/txtData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_gravity="right"
+                android:textColor="@color/titulo"
+                android:textStyle="bold"
+                android:textSize="15sp"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

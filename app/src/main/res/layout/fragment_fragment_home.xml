@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:paddingBottom="20dp"
+    tools:context="com.laisvidoto.desafioconcrete.FragmentHome">
+
+    <!-- Nome do repositorio, descrição, fork e star -->
+    <LinearLayout
+        android:id="@+id/RepositorioDetailes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="20dp"
+        android:layout_weight="2">
+
+        <!-- Titulo do repositorio -->
+        <TextView
+            android:id="@+id/txtNomeRepositorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/titulo"
+            android:textSize="17sp"/>
+
+        <!-- Descrição do Repositorio -->
+        <TextView
+            android:id="@+id/txtDescRepositorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textSize="15sp"
+            android:textColor="@color/body"/>
+
+        <!-- Forks e Star -->
+        <LinearLayout
+            android:id="@+id/ForksAndStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp">
+
+            <!-- Fork -->
+            <LinearLayout
+                android:id="@+id/containerForks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- imagem de fork -->
+                <ImageView
+                    android:id="@+id/Forks"
+                    android:layout_width="@dimen/fork_size"
+                    android:layout_height="@dimen/fork_size"
+                    android:src="@mipmap/ic_fork" />
+
+                <!-- Quantidade de Forks -->
+                <TextView
+                    android:id="@+id/txtForksCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/fork_star"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <!-- Star -->
+            <LinearLayout
+                android:id="@+id/Stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="20dp">
+
+                <!-- Imagem de Star -->
+                <ImageView
+                    android:id="@+id/Star"
+                    android:layout_width="@dimen/star_size"
+                    android:layout_height="@dimen/star_size"
+                    android:src="@mipmap/ic_star_foreground" />
+
+                <!-- Quantidade de Star -->
+                <TextView
+                    android:id="@+id/txtStarsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/fork_star"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Foto, nome e sobrenome -->
+    <LinearLayout
+        android:id="@+id/ProfileDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Imagem do Repositorio -->
+        <ImageView
+            android:id="@+id/imagemAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+        />
+
+        <!-- username -->
+        <TextView
+            android:id="@+id/txtNomeAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/titulo"
+            android:textSize="15sp"
+            android:textStyle="bold"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
