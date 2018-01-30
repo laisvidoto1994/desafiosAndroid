@@ -20,7 +20,7 @@ public class FragmentHome extends Fragment
 
     public FragmentHome()
     {
-        // Required empty public constructor
+        
     }
 
   public static FragmentHome newInstance(String param1, String param2)
