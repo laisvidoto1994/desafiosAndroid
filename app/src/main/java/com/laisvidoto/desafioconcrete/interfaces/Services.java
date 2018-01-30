@@ -1,5 +1,12 @@
 package com.laisvidoto.desafioconcrete.interfaces;
 
+import com.laisvidoto.desafioconcrete.model.PullRequest;
+import com.laisvidoto.desafioconcrete.model.RespostaRepositorio;
+import com.laisvidoto.desafioconcrete.model.Usuario;
+
+import java.util.List;
+
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;

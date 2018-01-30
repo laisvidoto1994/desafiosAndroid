@@ -1,5 +1,7 @@
 package com.laisvidoto.desafioconcrete.util;
 
+import com.laisvidoto.desafioconcrete.interfaces.Services;
+
 /**
  * Created by Laís Vidoto on 30/01/2018.
  */
