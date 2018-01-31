@@ -134,4 +134,3 @@ public class PullAdapter extends RecyclerView.Adapter<PullAdapter.ViewHolder>
         return date;
     }
 }
-
