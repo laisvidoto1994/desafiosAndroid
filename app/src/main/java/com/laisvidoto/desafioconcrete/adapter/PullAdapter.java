@@ -72,7 +72,7 @@ public class PullAdapter extends RecyclerView.Adapter<PullAdapter.ViewHolder>
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
 
-        View pullRequestView = inflater.inflate(R.layout.fragment_fragment_lista, parent, false);
+        View pullRequestView = inflater.inflate(R.layout.fragment_lista, parent, false);
 
         ViewHolder viewHolder = new ViewHolder(pullRequestView, this.pullRequestListener);
         return viewHolder;
