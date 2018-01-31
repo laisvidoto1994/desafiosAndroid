@@ -2,12 +2,13 @@ package com.laisvidoto.desafioconcrete.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import java.io.Serializable;
 
 /**
  * Created by Laís Vidoto on 30/01/2018.
  */
 
-public class Usuario
+public class Usuario implements Serializable
 {
     @SerializedName("login")
     @Expose
