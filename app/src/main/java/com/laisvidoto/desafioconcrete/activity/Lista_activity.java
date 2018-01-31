@@ -102,7 +102,7 @@ public class Lista_activity extends AppCompatActivity
                     progressBar.setVisibility(View.GONE);
                     listaRequests = response.body();
                     adapter.updatePullRequest(listaRequests);
-                    Log.i("Lista_activity", "Pull requests carregados.");
+                    Log.i("PullRequestActivity", "Pull requests carregados.");
                 }
             }
 
@@ -111,7 +111,7 @@ public class Lista_activity extends AppCompatActivity
             {
                 Toast.makeText(getApplicationContext(), "Carregamento inadequado!", Toast.LENGTH_SHORT).show();
                 t.printStackTrace();
-                Log.i("Lista_activity", "Erro no API!");
+                Log.i("PullRequestActivity", "Erro no API!");
             }
         });
     }

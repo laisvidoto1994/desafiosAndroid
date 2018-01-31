@@ -93,7 +93,11 @@ public class RepoAdapter extends RecyclerView.Adapter<RepoAdapter.ViewHolder>
         txtStarsCount.setText(String.valueOf(repository.getStarsCount()));
         txtNomeAutor.setText(repository.getOwner().getUsername());
 
-        Picasso.with(context).load(repository.getOwner().getPhoto()).resize(160, 160).into(imagemAutor);
+        Picasso.with(context)
+                .load(repository.getOwner()
+                        .getPhoto())
+                .resize(160, 160)
+                .into(imagemAutor);
     }
 
     @Override
